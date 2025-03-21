@@ -1,0 +1,81 @@
+*{ 
+    padding: 0; 
+    margin: 0; 
+    border: 0; 
+    text-decoration: none; 
+} 
+    
+:focus,:active{outline: none;} 
+a:focus,a:active{outline: none;} 
+    
+nav,footer,header,aside{display: block;} 
+    
+:root{ 
+    --boss: rgb(160, 160, 160); 
+    --colors: rgb(210, 198, 198); 
+}  
+    
+input,button,textarea{font-family:inherit;} 
+    
+input::-ms-clear{display: none;} 
+button{cursor: pointer;} 
+button::-moz-focus-inner {padding:0;border:0;} 
+a, a:visited{text-decoration: none;} 
+a:hover{text-decoration: none;} 
+ul li{list-style: none;} 
+img{vertical-align: top;} 
+    
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;} 
+    
+html{ 
+    scroll-behavior: smooth; 
+}
+
+
+body{
+    background-color: black;
+}
+
+.creepster-regular {
+    font-family: "Creepster", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.header{
+    max-width: 90%;
+    height: 50px;
+    border-radius: 30% 30% 5% 5% / 20% 20% 20% 20%;
+    background-color: rgb(36, 33, 33);
+    box-shadow: #434040 0px 10px 20px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #ffffff;
+}
+.name_logo{
+    width: 200px;
+    height: 100%;
+    font-size: 50px;
+    font-family:"Creepster", serif ;
+    display: flex;
+    align-items: center;
+    color: rgb(146, 7, 7);
+}
+
+.header__menu{
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header__menu-ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(125, 60, 60);
+}
