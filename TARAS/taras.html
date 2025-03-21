@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Search</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header class="header">
+    <h1>Game Search </h1>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="taras.html">Game search</a></li>
+        <li><a href="yarik.html">Yarik</a></li>
+        <li><a href="venya.html">VENYA</a></li>
+      </ul>
+    </nav>
+  </header>
+      <div class="header-searcher">
+        <h1>Game Search</h1>
+        <div class="search-container">
+          <input type="text" id="game-name" placeholder="Enter game name" />
+          <button id="search-button">Search</button>
+        </div>
+      </div>
+        
+
+    
+  <div class="results" id="results-container"></div>
+
+<!-- модалька -->
+ 
+<div id="game-modal" class="modal">
+  <div class="modal-content">
+    <span id="close-btn" class="close-btn">&times;</span>
+    <h2 id="modal-game-title"></h2>
+    <img id="modal-game-image" src="" alt="Game Image" />
+    <p id="modal-game-release"></p>
+    <p id="modal-game-description"></p>
+  </div>
+</div>
+
+<div class="info-section">
+  <h1>Welcome to Our Game Search Service</h1>
+  
+  <div class="info-block">
+    <h2>Comprehensive Game Database</h2>
+    <p>Our service boasts a database of over <strong>100,000 games</strong> across various platforms, including PC, PlayStation, Xbox, and Nintendo. Whether you're looking for the latest releases or classic titles, we've got you covered!</p>
+  </div>
+
+  <div class="info-block">
+    <h2>User-Friendly Search Experience</h2>
+    <p>With our intuitive search interface, you can find your favorite games in just <strong>3 clicks</strong>. Our advanced filtering options allow you to narrow down results by genre, release date, and platform, making your search quick and efficient.</p>
+  </div>
+
+  <div class="info-block">
+    <h2>Real-Time Reviews and Ratings</h2>
+    <p>Stay updated with the latest reviews! Our platform aggregates reviews from over <strong>500 gaming websites</strong>, providing you with real-time ratings and insights. Make informed decisions with our comprehensive review summaries.</p>
+  </div>
+
+  <div class="info-block">
+    <h2>Personalized Recommendations</h2>
+    <p>Discover new games tailored to your taste! Our algorithm analyzes your preferences and suggests games that match your interests, ensuring you never miss out on a great title. Join our community of over <strong>1 million gamers</strong> who have found their next favorite game!</p>
+  </div>
+
+  <div class="info-block">
+    <h2>Community Engagement</h2>
+    <p>Join a vibrant community of gamers! With over <strong>250,000 active users</strong>, you can share your thoughts, participate in discussions, and connect with fellow gamers. Our forums are buzzing with activity, making it easy to find like-minded individuals.</p>
+  </div>
+</div>
+<!-- Feedback -->
+<div class="feedback-section">
+  <h2>We Value Your Feedback</h2>
+  <p>Your thoughts and opinions matter to us! Please share your feedback about our game search service.</p>
+  <form id="feedback-form">
+    <input type="text" id="name" placeholder="Your Name" required />
+    <textarea id="feedback" class="feedback" rows="4" placeholder="Write your feedback here..." required></textarea>
+    <br>
+    <button type="submit">Submit Feedback</button>
+  </form>
+  <div id="feedback-list">
+    <h3>Previous Feedback</h3>
+    <ul id="feedback-items"></ul>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-content">
+    <h3>Contact Us</h3>
+    <p>Email: support@gamesearchservice.com</p>
+    <p>Phone: +1 (800) 123-4567</p>
+    <p>Address: 123 Game St, Gaming City, GA 12345</p>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2023 Game Search Service. All rights reserved.</p>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
