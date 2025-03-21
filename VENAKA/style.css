@@ -1,34 +1,10 @@
-*{ 
-    padding: 0; 
-    margin: 0; 
-    border: 0; 
-    text-decoration: none; 
-} 
-    
-:focus,:active{outline: none;} 
-a:focus,a:active{outline: none;} 
-    
-nav,footer,header,aside{display: block;} 
-    
-:root{ 
-    --boss: rgb(160, 160, 160); 
-    --colors: rgb(210, 198, 198); 
-}  
-    
-input,button,textarea{font-family:inherit;} 
-    
-input::-ms-clear{display: none;} 
-button{cursor: pointer;} 
-button::-moz-focus-inner {padding:0;border:0;} 
-a, a:visited{text-decoration: none;} 
-a:hover{text-decoration: none;} 
-ul li{list-style: none;} 
-img{vertical-align: top;} 
-    
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;} 
-    
-html{ 
-    scroll-behavior: smooth; 
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
 }
 
 
@@ -41,6 +17,12 @@ body{
     font-weight: 400;
     font-style: normal;
 }
+
+.butcherman-regular {
+    font-family: "Butcherman", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}  
 
 
 .header{
@@ -79,3 +61,254 @@ body{
     align-items: center;
     color: rgb(125, 60, 60);
 }
+.header_menu-ul_li{
+    color: #ffffff;
+    font-style: normal;
+    font-family:"Creepster", serif ;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.main__container{
+    width: 75%;
+    height: 500px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.main__container-block{
+    width: 45%;
+    height: 100%;
+    border: 1px solid #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__container-block:nth-child(1){
+    background-image: url(./img/malice/5a47c19c-f310-4bce-a07b-ee189fa5a48e-1736699400681.png);
+    box-shadow: #034613 0px 0px 20px;
+    border: 1px solid #ffffff00;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    transition: 1s;
+}
+.main__container-block:nth-child(1):hover{
+    scale: 1.07;
+    box-shadow: #05671c 0 0 30px;
+}
+.main__container-block:nth-child(2){
+    background-image: url(./img/surv/Milestone1ShedFront.webp);
+    box-shadow: #2e2801 0px 0px 30px;
+    border: 1px solid #ffffff00;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    transition: 1s;
+}
+.main__container-block:nth-child(2):hover{
+    scale: 1.07;
+    box-shadow: #655803 0px 0px 40px;
+}
+
+.main__container-block-h{
+    color: rgba(240, 248, 255, 0.735);
+    font-size: 50px;
+    font-family: "Butcherman", system-ui;
+}
+
+.main__gudes{
+    width: 60%;
+    height: 600px;
+    margin: 20px auto;
+    border: 1px solid #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.main__gudes-malice{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.malice{
+    width: 200px;
+    height: 90%;
+    border: 1px solid #ffffff;
+    border-radius: 0 0 100px 100px;
+    box-shadow: #434040 0 0 30px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.malice:hover{
+    scale: 1.05;
+}
+.img-block{
+    width: 100%;
+    height:200px ;
+    overflow: hidden;
+}
+.img-block-open{
+    width: 200px;
+    border-radius: 10px 0 0 0 ;
+    border: 1px solid #ffffff;
+    box-shadow: #034613 10px 10px 30px;
+}
+.malice__open{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    z-index: 20;
+    border-radius: 10px;
+    color: #ffffff;
+}
+.malice__open:hover{
+    scale: 1;
+}
+.name{
+    font-size: 80px;
+    font-family:"Creepster", serif  ;
+    letter-spacing: 20px;
+    display: none;
+    color: white;
+    position: absolute;
+    top: 100px;
+    left: 400px;
+}
+.name__open{
+    display: block;
+}
+.malice__open .name,
+.survs.malice__open .name {
+    color: red;
+    display: block;
+}
+
+.malice__close{
+    width: 20px;
+    height: 20px;
+    background-color: aliceblue;
+    border: 1px solid #ffffff;
+    border-radius: 0 10px 0 5px;
+    text-align: center;
+    top: 0;
+    right: 0; 
+    cursor: pointer;
+    display: none; 
+}
+.close-open{
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 0;
+    z-index: 21;
+}
+.change__malice, .change__survs {
+    width: 100px;
+    height: 40px;
+    background-color: #3b3030;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.change__malice:hover, .change__survs:hover {
+    background-color: #ffffff;
+    transform: scale(1.1);
+}
+.main__gudes-malice, .main__gudes-survs {
+    display: none; /* Спочатку обидва блоки приховані */
+    width: 100%;
+    text-align: center;
+}
+
+.main__gudes-malice.active, .main__gudes-survs.active {
+    display: flex; /* Показуємо активний блок */
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.pagination-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.survs {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ffffff;
+    box-shadow: #434040 0 0 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.survs:hover {
+    scale: 1.05;
+}
+
+.img-block {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.img-block-open {
+    width: 30%;
+    height: 45%;
+    border-radius: 10px;
+    box-shadow: #034613 10px 10px 30px;
+}
+
+.survs__open {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    z-index: 20;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+
+.survs__close {
+    width: 20px;
+    height: 20px;
+    background-color: aliceblue;
+    border: 1px solid #ffffff;
+    border-radius: 0 10px 0 5px;
+    text-align: center;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    display: none;
+}
+
+.close-open {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 0;
+    z-index: 21;
+}
+.main__gudes-survs{
+    max-width: 1200px;
+    position: relative;
+}
+
