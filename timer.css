@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.timer-container {
+    max-width: 1200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+    margin: 50px auto;
+}
+.boldonse-regular {
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.timer__text {
+    font-size: 10px;
+    transition: font-size 0.5s, transform 0.5s ease-in-out;
+    position: relative;
+    margin: 5px;
+    font-family: "Boldonse", system-ui;
+    font-weight: 100;
+}
+
+.timer__text:first-child {
+    font-size: 60px;
+}
+
+.flipped .timer__text:first-child {
+    font-size: 10px;
+}
+
+.flipped .timer__text:last-child {
+    font-size: 60px;
+}
+
+.button {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    position: absolute;
+    top: 400px;
+    left: 700px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}

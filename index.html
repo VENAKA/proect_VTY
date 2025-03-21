@@ -3,12 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./slider.css">
+    <link rel="stylesheet" href="./timer.css">
     <link rel="stylesheet" href="./stule.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    
+    <header class="header">
+        <h1>Projekt_VTY</h1>
+        <nav>
+            <ul class="nav-list">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./">Game search</a></li>
+            <li><a href="./YARIK/index.html">minigame</a></li>
+            <li><a href="./VENAKA/index.html">wiki-forsaken</a></li>
+            </ul>
+        </nav>
+        </header>
+        <main class="main">
+            <div class="time">
+                <div class="timer-container">
+                    <p class="timer__text">time on the page: <span id="time-spent">0h 0m 0s</span></p>
+                    <p class="timer__text">Current time: <span id="real-time-clock"></span></p>
+                </div>
+                <button class="button">choose a timer</button>    
+            </div>
 
+
+            <div class="slider-container">
+                <button class="btn prev" onclick="prevSlide()">&#10094;</button>
+                <div class="slider">
+                    <div class="slide left">
+
+                    </div>
+                    <div class="slide center">
+
+                    </div>
+                    <div class="slide right">
+                        
+                    </div>
+                </div>
+                <button class="btn next" onclick="nextSlide()">&#10095;</button>
+            </div>
+
+        </main>
+        <script src="./slider.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>
