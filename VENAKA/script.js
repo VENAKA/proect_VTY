@@ -1,25 +1,4 @@
-/* let maliceBtn = document.querySelector('.malice')
-let maliceImg = document.querySelector('.img-block')
-let closeBtn = document.querySelector('.malice__close')
 
-if (maliceBtn && closeBtn) {
-    maliceBtn.addEventListener('click', function () {
-        maliceImg.classList.add('img-block-open')
-        maliceBtn.classList.add('malice__open')
-        closeBtn.classList.add('close-open')
-    });
-
-    closeBtn.addEventListener('click', function (event) {
-        event.stopPropagation(); 
-        if (maliceBtn.classList.contains('malice__open')) {
-            maliceImg.classList.remove('img-block-open')
-            maliceBtn.classList.remove('malice__open');
-            closeBtn.classList.remove('close-open'); 
-        }
-    });
-}
- */
-// Відкриття всіх елементів malice
 let maliceItems = document.querySelectorAll('.malice');
 
 maliceItems.forEach(malice => {
@@ -70,14 +49,14 @@ survsItems.forEach(surv => {
     });
 });
 
-// Отримуємо блоки
+
 let maliceBlock = document.querySelector('.main__gudes-malice');
 let survsBlock = document.querySelector('.main__gudes-survs');
 
-// Встановлюємо початковий стан (показуємо Maniacs)
+
 maliceBlock.classList.add('active');
 
-// Функція перемикання блоків
+
 document.querySelector('.change__malice').addEventListener('click', function () {
     maliceBlock.classList.add('active');
     survsBlock.classList.remove('active');
