@@ -19,3 +19,18 @@ function prevSlide() {
     currentIndex = (currentIndex + 2) % 3;
     updateSlides();
 }
+let yarBtn = document.getElementById('1')
+let tarBtn = document.getElementById('2')
+let venBtn = document.getElementById('3')
+
+yarBtn.addEventListener('click', function(){
+    window.location.href = './YARIK/yarik.html'
+})
+
+tarBtn.addEventListener('click', function(){
+    window.location.href = './TARAS/taras.html'
+})
+
+venBtn.addEventListener('click', function(){
+    window.location.href = './VENAKA/venaka.html'
+})
