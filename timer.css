@@ -33,16 +33,25 @@
 
 .timer__text:first-child {
     font-size: 60px;
+    transition: 0.7s;
 }
 
 .flipped .timer__text:first-child {
     font-size: 10px;
+    display: none;
+    transition: 0.7s;
 }
 
 .flipped .timer__text:last-child {
     font-size: 60px;
+    transition: 0.7s;
+    display: block;
+    
 }
-
+.timer__text:last-child{
+    display: none;
+    transition: 0.7s;
+}
 .button {
     width: 100px;
     height: 40px;
@@ -61,3 +70,11 @@
 .button:hover {
     background-color: #0056b3;
 }
+
+.timer-alternative {
+    display: none; 
+    color: aliceblue;
+    font-size: 20px;
+}
+
+
