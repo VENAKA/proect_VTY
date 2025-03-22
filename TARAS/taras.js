@@ -2,16 +2,7 @@ let apiKey = 'd986205facmsh3428e368904d746p19887djsn4c329f17be1f';
 let apiHost = 'opencritic-api.p.rapidapi.com'; 
 let rawgApiKey = '51c7a66d5729445abeeb8ecb21fa43af'; 
 
-function showLoader() {
-  let loader = document.getElementById('loader');
-  loader.style.display = 'block'; 
-}
 
-
-function hideLoader() {
-  let loader = document.getElementById('loader');
-  loader.style.display = 'none'; 
-}
 
 
 function searchGame() {
@@ -21,7 +12,7 @@ function searchGame() {
     return;
   }
 
-  showLoader(); 
+ 
 
   
   let url = `https://${apiHost}/game/search?criteria=${encodeURIComponent(gameName)}`;
@@ -51,10 +42,6 @@ function searchGame() {
     .catch(error => {
       console.error('Error fetching data:', error);
     })
-    .finally(() => {
-      
-      setTimeout(hideLoader, 770);
-    });
 }
 
 function fetchGameDetailsFromRawg(gameName, openCriticGame) {
@@ -181,3 +168,4 @@ document.getElementById('feedback-form').addEventListener('submit', function (ev
   }
 });
 window.onload = loadFeedback;
+
