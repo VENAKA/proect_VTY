@@ -1,8 +1,8 @@
 let currentIndex = 1;
-const slides = document.querySelectorAll(".slide");
+let slides = document.querySelectorAll(".slide");
 
 function updateSlides() {
-    slides.forEach((slide, index) => {
+    slides.forEach((slide) => {
         slide.classList.remove("left", "center", "right");
     });
     slides[(currentIndex + 2) % 3].classList.add("left");

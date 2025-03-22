@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+.boldonse-regular {
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
 .slider-container {
     position: relative;
     width: 1200px;
@@ -28,15 +33,17 @@
     position: absolute;
     width: 600px;
     height: 400px;
-    background-color: lightblue;
+    background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
-    font-weight: bold;
+    font-size: 30px;
     transition: transform 0.5s, opacity 0.5s;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    flex-direction: column;
+    color: aliceblue;
+    font-family: "Boldonse", system-ui;
 }
 .left, .right {
     width: 500px;
@@ -45,6 +52,7 @@
 }
 .left {
     transform: translateX(-350px) scale(0.85);
+    font-size: 20px;
 }
 .center {
     transform: scale(1);
@@ -52,6 +60,7 @@
 }
 .right {
     transform: translateX(350px) scale(0.85);
+    font-size: 20px;
 }
 .btn {
     position: absolute;
@@ -70,4 +79,32 @@
 }
 .next {
     right: 20px;
+}
+
+.button-1{
+padding: 5px;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+.button-1:hover {
+    background-color: #0056b3;
+}
+
+.block{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.block:nth-child(1){
+    background-image: url(./img/image\ \(70\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
