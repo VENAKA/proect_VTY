@@ -7,7 +7,7 @@ body {
     overflow-x:hidden ;
   }
   .header-searcher{
-    margin-left: 20px;
+    text-align:center;
   }
   .header {
     background-color: #3498db; 
@@ -31,9 +31,9 @@ body {
     color: rgb(0, 0, 0); 
     padding: 20px; 
     text-align: center; 
-    display: flex;
+    
     justify-content: space-around;
-    flex-wrap: wrap;
+    
     align-items: center;
     font-family: "Boldonse", system-ui;
     font-weight: 200;
