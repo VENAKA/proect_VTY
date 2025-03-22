@@ -71,3 +71,40 @@
 .next {
     right: 20px;
 }
+.yar-block{
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: space-between;
+     flex-direction: column;
+     align-items: center;
+     padding: 20px;
+ }
+ .block:nth-child(1){
+     background-image: url(./img/image\ \(70\).png);
+     background-size: cover;
+     background-repeat: no-repeat;
+ 
+ }
+ .ven-block{
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: space-between;
+     flex-direction: column;
+     align-items: center;
+     padding: 20px;
+     background-image: url(./img/e9c6f0b1696f483309a79539f6f27fff.jpg);
+     background-size: cover;
+ }
+ 
+ .tar-block{
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: space-between;
+     flex-direction: column;
+     align-items: center;
+     padding: 20px;
+     background-image: url(./img/image\ \(71\).png);
+     background-size: cover;
