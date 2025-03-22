@@ -168,7 +168,7 @@ document.getElementById('feedback-form').addEventListener('submit', function (ev
 
   if (name && feedbackText) {
     
-    let feedbackItems = JSON.parse(localStorage.getItem('feedbackTtems')) || [];
+    let feedbackItems = JSON.parse(localStorage.getItem('feedbackITems')) || [];
     feedbackItems.push({ name: name, feedback: feedbackText }); 
 
     
