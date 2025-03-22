@@ -142,10 +142,34 @@ a {
     font-family: "Tiny5", sans-serif;
     font-size: 30px;
     margin-top: 30px;
+    margin-right: 20px;
     padding: 10px 20px;
     background-color: rgb(237, 78, 53);
     color: rgb(255, 231, 227);
     border-top: 6px solid rgb(244, 121, 102);
     border-bottom: 6px solid rgb(173, 56, 38);
     cursor: pointer;
+}
+
+
+.clear-button {
+    font-family: "Tiny5", sans-serif;
+    font-size: 30px;
+    margin-top: 30px;
+    padding: 10px 52px;
+    background-color: rgb(9, 172, 226);
+    color: rgb(255, 231, 227);
+    border-top: 6px solid rgb(84, 212, 255);
+    border-bottom: 6px solid rgb(5, 138, 183);
+    cursor: pointer;
+}
+
+.rules {
+    font-family: "Tiny5", sans-serif;
+    top: 75px;
+    left: -200px;
+    color: #ffffff00;
+    width: 450px;
+    position: fixed;
+    transition: 0.5s;
 }
