@@ -7,17 +7,17 @@
     box-sizing: border-box;
 }
 
-body {
+/* body {
     background-color: black;
     font-family: "Boldonse", system-ui;
-}
+} */
 
 .boldonse-regular {
     font-family: "Boldonse", system-ui;
     font-weight: 400;
     font-style: normal;
 }
-
+/* 
 .header {
     height: 120px;
     background-color: #17252e;
@@ -29,7 +29,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     font-weight: 200;
-}
+} */
 
 .nav-list {
     list-style-type: none;
@@ -54,7 +54,7 @@ body {
     background-color: #2980b9;
 }
 
-.main {
+/* .main {
     max-width: 1200px;
     height: 1200px;
     margin: 30px auto;
@@ -182,7 +182,7 @@ body {
 
 .next {
     right: 20px;
-}
+} */
 
 
 @media (max-width: 1200px) {
