@@ -1,9 +1,12 @@
 let cells = document.querySelectorAll('.cube');
 let scoreX_text = document.querySelector('.scoreX');
 let scoreO_text = document.querySelector('.scoreO');
+let rules = document.querySelector('.rules')
 
 let startBtn = document.querySelector('.start-button');
 let restartBtn = document.querySelector('.restart-button');
+let clearBtn = document.querySelector('.clear-button');
+let rulesBtn = document.querySelector('.rules-button')
 
 let scoreX = localStorage.getItem('scoreX') ? parseInt(localStorage.getItem('scoreX')) : 0;
 let scoreO = localStorage.getItem('scoreO') ? parseInt(localStorage.getItem('scoreO')) : 0;
@@ -11,6 +14,7 @@ let scoreO = localStorage.getItem('scoreO') ? parseInt(localStorage.getItem('sco
 scoreX_text.textContent = scoreX;
 scoreO_text.textContent = scoreO;
 
+let turnRules = 0;
 let turn = 0;
 let isWin = 1;
 
@@ -33,11 +37,36 @@ restartBtn.addEventListener('click', function () {
     }
 });
 
+clearBtn.addEventListener('click', function () {
+    clearScore();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' 
+    });
+});
+
+rulesBtn.addEventListener('click', function () {
+    if (turnRules === 0) {
+        rules.style.left = '30px'
+        rules.style.color = '#ffffff'
+        turnRules = 1
+    }
+    else if (turnRules === 1) {
+        rules.style.left = '-400px'
+        rules.style.color = '#ffffff00'
+        turnRules = 0
+    }
+});
+
 function StartGameSolo() {
     reset();
     cellsHover();
     let field = document.querySelector('.zone');
-    field.style.outlineColor = turn === 0 ? "red" : "blue";
+    if (turn === 0) {
+        field.style.outlineColor = "red";
+    } else {
+        field.style.outlineColor = "blue";
+    }
 
     cells.forEach(cell => {
         cell.addEventListener('click', function () {
@@ -49,12 +78,24 @@ function StartGameSolo() {
                 return;
             }
 
-            this.style.color = turn === 0 ? "red" : "blue";
-            this.textContent = turn === 0 ? "X" : "O";
-            turn === 0 ? x_cells.push(cellId) : o_cells.push(cellId);
-            turn = 1 - turn;
+            if (turn === 0) {
+                this.style.color = "red";
+                this.textContent = "X";
+                x_cells.push(cellId);
+                turn = 1;
+            } else {
+                this.style.color = "blue";
+                this.textContent = "O";
+                o_cells.push(cellId);
+                turn = 0;
+            }
 
-            field.style.outlineColor = turn === 0 ? "red" : "blue";
+            if (turn === 0) {
+                field.style.outlineColor = "red";
+            } else {
+                field.style.outlineColor = "blue";
+            }
+
             win();
         });
     });
@@ -98,6 +139,15 @@ function updateScore(winner) {
     isWin = 1;
 }
 
+function clearScore() {
+    scoreX = 0;
+    scoreO = 0;
+    localStorage.setItem('scoreX', scoreX);
+    localStorage.setItem('scoreO', scoreO);
+    scoreX_text.textContent = scoreX;
+    scoreO_text.textContent = scoreO;
+}
+
 function reset() {
     turn = 0;
     isWin = 0;
@@ -131,3 +181,11 @@ function cellsHover() {
         });
     });
 }
+
+
+
+
+
+
+
+
