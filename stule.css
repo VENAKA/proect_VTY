@@ -19,7 +19,7 @@ body{
 .header {
     height: 120px;
     background-color: #17252e; 
-    color: rgb(0, 0, 0); 
+    color: rgb(159, 159, 159); 
     padding: 20px; 
     text-align: center; 
     display: flex;
@@ -36,12 +36,13 @@ body{
 }
 
 .nav-list li {
+    color: rgb(255, 255, 255);
     display: inline; 
     margin: 0 15px; 
 }
 
 .nav-list a {
-    color: rgb(0, 0, 0); 
+    color: rgb(255, 255, 255); 
     text-decoration: none; 
     font-weight: bold; 
     padding: 10px 15px; 
